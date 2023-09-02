@@ -35,8 +35,6 @@ const Home = async ({ searchParams: { category, endcursor } }: Props) => {
 
   const projectsToDisplay = data?.projectSearch.edges || [];
 
-  console.log(projectsToDisplay);
-
   if(projectsToDisplay.length === 0){
     return (
       <section className="flexStart flex-col paddings">
